@@ -42,7 +42,7 @@
     <h3>{% trans "Ask a Question" %}</h3>
     <hr />
 
-    {% url knowledge_ask as form_url %}
+    {% url "knowledge_ask" as form_url %}
 
     {% include "django_knowledge/form.html" with submit_value="Submit this support request" submit_and="and we'll get back to you as soon as possible." submit_url=form_url %}
   </div>
